@@ -141,11 +141,7 @@ st.markdown("""
 
 
 
-try:
-    groq_api_key = st.secrets["API_KEYS"]["GROQ_API_KEY"]
-except:
-    groq_api_key = None
-
+groq_api_key = st.secrets.get("API_KEYS", {}).get("GROQ_API_KEY")
 
 # Load models
 try:
