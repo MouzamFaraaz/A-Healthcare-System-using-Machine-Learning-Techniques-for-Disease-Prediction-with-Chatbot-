@@ -5,7 +5,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import os
-from dotenv import load_dotenv
 from groq import Groq
 
 
@@ -142,8 +141,7 @@ st.markdown("""
 
 
 # Load environment variables
-load_dotenv()
-groq_api_key = os.getenv("GROQ_API_KEY", "")
+groq_api_key = st.secrets["API_KEYS"]["GROQ_API_KEY"]
 
 # Load models
 try:
