@@ -140,8 +140,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# Load environment variables
-groq_api_key = st.secrets["API_KEYS"]["GROQ_API_KEY"]
+
+try:
+    groq_api_key = st.secrets["API_KEYS"]["GROQ_API_KEY"]
+except:
+    groq_api_key = None
+
 
 # Load models
 try:
