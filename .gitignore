@@ -1,0 +1,36 @@
+# ---------------------------
+# 🐍 Python
+# ---------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment folders
+.venv/
+venv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# ---------------------------
+# 🤖 Streamlit & ML
+# ---------------------------
+.streamlit/
+.DS_Store
+Thumbs.db
+
+# Optionally ignore trained models (uncomment if needed)
+# *.pkl
+
+# ---------------------------
+# 🔐 Secrets / API Keys
+# ---------------------------
+.env
+
+# ---------------------------
+# 🛠 Editor / IDE
+# ---------------------------
+.vscode/
+.idea/
