@@ -1,5 +1,5 @@
-streamlit>=1.29,<1.33
-altair<5
+streamlit==1.31.1
+altair==4.2.2
 
 numpy
 pandas
@@ -13,4 +13,5 @@ seaborn
 streamlit-option-menu
 openai
 groq
+
 
